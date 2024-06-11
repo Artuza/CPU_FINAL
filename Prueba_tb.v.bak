@@ -1,0 +1,33 @@
+`timescale 1ns / 1ps
+
+module Prueba_tb;
+
+    // Parámetros del módulo
+    parameter CLK_PERIOD = 10; // Periodo del reloj en unidades de tiempo
+
+    // Señales de entrada
+    reg clk;
+    reg reset;
+
+    // Instanciación del módulo bajo prueba
+    CPU dut (
+        .clk(clk),
+        .reset(reset)
+    );
+
+    // Generación de señal de reloj
+    always #((CLK_PERIOD/2)) clk = ~clk;
+
+    // Inicialización de la simulación
+    initial begin
+        $dumpfile("cpu_waveform.vcd"); // Archivo para guardar las ondas
+        $dumpvars(0, testbench); // Guardar todas las señales
+        clk = 0; // Inicializar reloj
+        reset = 1; // Inicializar señal de reset
+        #100; // Esperar un poco
+        reset = 0; // Desactivar reset
+        #1000; // Ejecutar la simulación durante un tiempo
+        $finish; // Terminar simulación
+    end
+
+endmodule

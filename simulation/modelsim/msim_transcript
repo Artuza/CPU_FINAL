@@ -1,0 +1,142 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do CPU_Final_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Intel/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/RegisterFile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/CPU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/CPU.v 
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/ProgramCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/ProgramCounter.v 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/ProgramMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/ProgramMemory.v 
+# -- Compiling module ProgramMemory
+# 
+# Top level modules:
+# 	ProgramMemory
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/ControlUnit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/ControlUnit.v 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/DataMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/DataMemory.v 
+# -- Compiling module DataMemory
+# 
+# Top level modules:
+# 	DataMemory
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/Fibonacci_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/Fibonacci_tb.v 
+# -- Compiling module Fibonacci_tb
+# 
+# Top level modules:
+# 	Fibonacci_tb
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final {C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:28:45 on Jun 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/artur/OneDrive/Desktop/CPU_Final" C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v 
+# -- Compiling module Prueba_tb
+# 
+# Top level modules:
+# 	Prueba_tb
+# End time: 12:28:45 on Jun 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Prueba_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Prueba_tb 
+# Start time: 12:28:46 on Jun 10,2024
+# Loading work.Prueba_tb
+# Loading work.CPU
+# Loading work.ProgramCounter
+# Loading work.ProgramMemory
+# Loading work.RegisterFile
+# Loading work.DataMemory
+# Loading work.ALU
+# Loading work.ControlUnit
+# ** Error (suppressible): (vsim-3389) Port 'instr' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'rd1' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'rd2' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'alu_out' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'mem_out' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'pc' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'next_pc' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'we_reg' not found in the connected module (10th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'we_mem' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# ** Error (suppressible): (vsim-3389) Port 'alu_control' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Prueba_tb/dut File: C:/Users/artur/OneDrive/Desktop/CPU_Final/Prueba_tb.v Line: 19
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./CPU_Final_run_msim_rtl_verilog.do PAUSED at line 19
+# End time: 13:01:58 on Jun 10,2024, Elapsed time: 0:33:12
+# Errors: 10, Warnings: 0

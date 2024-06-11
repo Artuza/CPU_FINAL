@@ -1,0 +1,27 @@
+module RegisterFile (
+    input wire clk,
+    input wire reset,
+    input wire we, // Write enable
+    input wire [4:0] ra1, ra2, wa, // Read and write addresses
+    input wire [31:0] wd, // Write data
+    output wire [31:0] rd1, rd2 // Read data
+);
+    reg [31:0] registers [31:0];
+
+    // Read ports
+    assign rd1 = registers[ra1];
+    assign rd2 = registers[ra2];
+
+    // Write port
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            // Inicializar los registros en 0
+            integer i;
+            for (i = 0; i < 32; i = i + 1) begin
+                registers[i] <= 32'b0;
+            end
+        end else if (we) begin
+            registers[wa] <= wd;
+        end
+    end
+endmodule

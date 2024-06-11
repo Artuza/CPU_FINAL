@@ -1,0 +1,46 @@
+`timescale 1ns / 1ps
+
+module Fibonacci_tb;
+
+    // Parámetros
+    parameter CLK_PERIOD = 10; // Periodo del reloj en unidades de tiempo
+
+    // Definir los puertos de la unidad bajo prueba (UUT)
+    reg clk;
+    reg reset;
+    wire [31:0] fib_out;
+
+    // Instanciar la unidad bajo prueba (UUT)
+    CPU uut (
+        .clk(clk),
+        .reset(reset),
+        .fib_out(fib_out)
+    );
+
+    // Generar un reloj
+    always #((CLK_PERIOD / 2)) clk = ~clk;
+
+    // Inicializar señales
+    initial begin
+        clk = 0;
+        reset = 1;
+        #20; // Esperar un ciclo de reloj
+        reset = 0; // Desactivar el reset
+        #10; // Esperar algunos ciclos para estabilizar
+
+        // Realizar el cálculo de Fibonacci
+        // Puedes modificar este bucle para calcular más términos si lo deseas
+        repeat (10) begin
+            #10; // Esperar un ciclo de reloj
+        end
+
+        // Terminar la simulación
+        $finish;
+    end
+
+    // Imprimir resultados
+    initial begin
+        $monitor("Time=%0t, Fibonacci=%d", $time, fib_out);
+    end
+
+endmodule

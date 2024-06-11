@@ -1,0 +1,17 @@
+module RAM (
+    input wire clk,
+    input wire we, // Write enable
+    input wire [31:0] addr, // Address
+    input wire [31:0] wd, // Write data
+    output wire [31:0] rd // Read data
+);
+    reg [31:0] memory [255:0]; // 256 words of 32 bits
+
+    assign rd = memory[addr];
+
+    always @(posedge clk) begin
+        if (we) begin
+            memory[addr] <= wd;
+        end
+    end
+endmodule

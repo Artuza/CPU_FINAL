@@ -1,0 +1,14 @@
+module ProgramMemory (
+    input wire [31:0] addr,
+    output wire [31:0] instr
+);
+    reg [31:0] memory [0:255]; // Memoria de 256 instrucciones
+
+    // Inicializar la memoria con algunas instrucciones (esto es solo un ejemplo)
+    initial begin
+        memory[0] = 32'b000000_00001_00010_00011_00000_000000; // Ejemplo de instrucción
+        // Más inicializaciones...
+    end
+
+    assign instr = memory[addr[7:0]]; // Direccionamiento simple
+endmodule

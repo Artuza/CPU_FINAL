@@ -1,0 +1,52 @@
+module CPU (
+    input wire clk,
+    input wire reset
+);
+    // Señales de interconexión
+    wire [31:0] instr, rd1, rd2, alu_out, mem_out;
+    wire we_reg, we_mem;
+    wire [2:0] alu_control;
+
+    // Instanciar banco de registros
+    RegisterFile rf (
+        .clk(clk),
+        .reset(reset),
+        .we(we_reg),
+        .ra1(instr[25:21]),
+        .ra2(instr[20:16]),
+        .wa(instr[15:11]),
+        .wd(mem_out),
+        .rd1(rd1),
+        .rd2(rd2)
+    );
+
+    // Instanciar memoria RAM
+    RAM mem (
+        .clk(clk),
+        .we(we_mem),
+        .addr(alu_out),
+        .wd(rd2),
+        .rd(mem_out)
+    );
+
+    // Instanciar ALU
+    ALU alu (
+        .a(rd1),
+        .b(rd2),
+        .alu_control(alu_control),
+        .result(alu_out
+    );
+
+    // Instanciar unidad de control
+    ControlUnit cu (
+        .opcode(instr[31:26]),
+        .we_reg(we_reg),
+        .we_mem(we_mem),
+        .alu_control(alu_control)
+    );
+
+    // Fetch de la instrucción desde la memoria (para simplificar)
+    assign instr = mem_out;
+
+    // Otros módulos y lógica
+endmodule
